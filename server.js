@@ -1,4 +1,4 @@
-const io = require('socket.io')(3000, { //handles the CORS errors
+const io = require('socket.io')(8000, { //handles the CORS errors
     cors: {
         origin: "*", // Allow any origin
         methods: ["GET", "POST"]
