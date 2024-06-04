@@ -1,0 +1,106 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css');
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #6992cf;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #message-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 20px;
+            flex-grow: 1;
+            overflow-y: auto;
+            margin: 20px;
+            background-color: rgb(235, 220, 230);
+            border-radius: 4px;
+            border-radius: 5px;
+        }
+
+        #send-container, #username-container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #message-input, #username-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        #send-button, #username-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #send-button:hover, #username-button:hover {
+            background-color: #0056b3;
+        }
+
+        #username-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        #username-display {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #fff;
+            margin-right:10px;
+        }
+
+        .gg-arrow-right {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            width: 22px;
+            height: 22px;
+        }
+
+        .gg-arrow-right::after,
+        .gg-arrow-right::before {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            right: 3px;
+        }
+
+        .gg-arrow-right::after {
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid;
+            border-right: 2px solid;
+            transform: rotate(45deg);
+            bottom: 7px;
+        }
+
+        .gg-arrow-right::before {
+            width: 16px;
+            height: 2px;
+            bottom: 10px;
+            background: currentColor;
+        }

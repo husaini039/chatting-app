@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat stuff</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="message-container"></div>
+    <form id="username-container">
+        <input type="text" id="username-input" placeholder="Enter your name">
+        <button type="submit" id="username-button">Join</button>
+    </form>
+    <form id="send-container" style="display: none;">
+        <div id="username-display"></div>
+        <input type="text" id="message-input" placeholder="Type your message">
+        <button type="submit" id="send-button"><i class="gg-arrow-right"></i></button>
+    </form>
+</body>
+</html>
